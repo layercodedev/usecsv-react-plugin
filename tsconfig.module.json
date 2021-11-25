@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Transpilation settings.
+    "module": "ES2020",
+    "target": "ES5",
+    // Output settings.
+    "charset": "utf-8",
+    "newLine": "LF",
+    "sourceMap": true,
+    // Type declaration settings.
+    "declaration": true,
+    "declarationDir": "build/types/",
+    // "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "src/lib/**/*.spec.ts",
+    "src/**/dev",
+    "./**/test"
+  ]
+}

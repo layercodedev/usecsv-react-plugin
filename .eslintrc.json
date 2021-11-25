@@ -1,0 +1,91 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "build",
+    "coverage"
+  ],
+  "plugins": [
+    "import",
+    "eslint-comments",
+    "functional",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "./.eslintrc.airbnbts.js",
+    "plugin:import/typescript",
+    "plugin:functional/lite",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:jest/recommended",
+    "plugin:jest/style"
+  ],
+  "globals": {
+    "BigInt": true,
+    "console": true,
+    "WebAssembly": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "quotes": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": [
+          "camelCase",
+          "PascalCase"
+        ],
+        "filter": {
+          // you can expand this regex to add more allowed names
+          "regex": "^(_|__)$",
+          "match": false
+        }
+      },
+      {
+        "selector": "variable",
+        "format": [
+          "camelCase",
+          "PascalCase",
+          "UPPER_CASE"
+        ],
+        "leadingUnderscore": "allow"
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "eslint-comments/disable-enable-pair": [
+      "error",
+      {
+        "allowWholeFile": true
+      }
+    ],
+    "eslint-comments/no-unused-disable": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true,
+        "ignoreCase": true
+      }
+    ]
+  }
+}
