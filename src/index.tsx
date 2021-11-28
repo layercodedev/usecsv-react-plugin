@@ -1,8 +1,3 @@
-import React from "react";
-// import usecsvPlugin from "@usecsv/js";
-
-const UseCsvButton = () => {
-  return <div> a button</div>;
-};
+import UseCsvButton from "./lib/useCsvReactPlugin";
 
 export default UseCsvButton;
