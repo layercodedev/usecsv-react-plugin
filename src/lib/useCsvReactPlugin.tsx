@@ -1,39 +1,41 @@
 import useCsvPlugin from "@usecsv/js";
-import React from "react";
+import React, { FC, ReactNode } from "react";
 
 type UserObject = {
   readonly userId: string;
 };
-
-const UseCsvButton = ({
-  children,
-  importerKey,
-  user,
-  metadata,
-}: {
-  readonly children: string;
+type UseCsvButtonTypes = {
   readonly importerKey: string;
   readonly user: UserObject;
-  readonly metadata: Record<string, string | number>;
-}) => {
+  readonly metadata: Record<string, string | number> | undefined;
+  readonly render?: ((onClick: () => Promise<any>) => ReactNode) | undefined | null;
+};
+
+const UseCsvButton: FC<UseCsvButtonTypes> = ({ children, importerKey, user, metadata, render }) => {
   return (
-    <button
-      type="button"
-      id="usecsv-button"
-      style={{
-        backgroundColor: "#FFF",
-        color: "#000",
-        border: "2px solid #000",
-        borderRadius: "6px",
-        padding: "10px 15px",
-        textAlign: "center",
-        fontSize: "16px",
-        cursor: "pointer",
-      }}
-      onClick={() => useCsvPlugin({ importerKey, user, metadata })}
-    >
-      {children}
-    </button>
+    <>
+      {render ? (
+        <>{render(() => useCsvPlugin({ importerKey, user, metadata }))}</>
+      ) : (
+        <button
+          type="button"
+          id="usecsv-button"
+          style={{
+            backgroundColor: "#FFF",
+            color: "#000",
+            border: "2px solid #000",
+            borderRadius: "6px",
+            padding: "10px 15px",
+            textAlign: "center",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+          onClick={() => useCsvPlugin({ importerKey, user, metadata })}
+        >
+          {children}
+        </button>
+      )}
+    </>
   );
 };
 
