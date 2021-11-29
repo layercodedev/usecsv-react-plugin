@@ -2583,7 +2583,7 @@
     "@typescript-eslint/types" "4.28.4"
     eslint-visitor-keys "^2.0.0"
 
-"@usecsv/js@^0.0.9":
+"@usecsv/js@0.0.9":
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.0.9.tgz#f77125e3dbf52fd582dfac6acaa0b77b67b6473f"
   integrity sha512-uX+5nVV4S4Zju8uizIBoVXrEjE9yZGGhfrj3GyrhW8rXhluNODCzcUvArNDNDE+aR7XuXSeL7jJq05O+Ih+8Mw==
