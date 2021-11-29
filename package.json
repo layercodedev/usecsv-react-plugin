@@ -36,7 +36,7 @@
     "fix": "run-s fix:*",
     "fix:lint": "eslint src --ext .ts --fix",
     "lint": "eslint src --ext .ts",
-    "test": "nyc --silent jest",
+    "test": "nyc --silent jest --passWithNoTests",
     "typecheck": "tsc --noEmit",
     "check-cli": "run-s test diff-integration-tests check-integration-tests",
     "check-integration-tests": "run-s check-integration-test:*",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@semantic-release/github": "^7.2.3",
-    "@usecsv/js": "^0.0.8"
+    "@usecsv/js": "0.0.9"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.8",

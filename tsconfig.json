@@ -30,6 +30,6 @@
   },
   "include": [
     "./src/**/*.ts",
-    "src/index.tsx",
+    "src/index.tsx", "./src/**/*.tsx",
   ],
 }
