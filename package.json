@@ -36,7 +36,7 @@
     "fix": "run-s fix:*",
     "fix:lint": "eslint src --ext .ts --fix",
     "lint": "eslint src --ext .ts",
-    "test": "nyc --silent jest",
+    "test": "nyc --silent jest --passWithNoTests",
     "typecheck": "tsc --noEmit",
     "check-cli": "run-s test diff-integration-tests check-integration-tests",
     "check-integration-tests": "run-s check-integration-test:*",
