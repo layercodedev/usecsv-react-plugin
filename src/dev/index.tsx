@@ -13,7 +13,12 @@ ReactDOM.render(
         transform: "translateX(-50%) translateY(-50%)",
       }}
     >
-      <UseCsvButton importerKey="your-importer-key" user={{ userId: "12345" }} metadata={{ anotherId: "12345" }}>
+      <UseCsvButton
+        importerKey="your-importer-key"
+        user={{ userId: "12345" }}
+        metadata={{ anotherId: "12345" }}
+        render={null}
+      >
         Import Data
       </UseCsvButton>
     </div>
