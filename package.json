@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@semantic-release/github": "^7.2.3",
-    "@usecsv/js": "^0.0.12"
+    "@usecsv/js": "0.1.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.8",
