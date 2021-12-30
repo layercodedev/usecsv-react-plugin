@@ -6,7 +6,7 @@ type UserObject = {
 };
 type UseCsvButtonTypes = {
   readonly importerKey: string;
-  readonly user?: UserObject | null;
+  readonly user?: UserObject;
   readonly metadata: Record<string, string | number> | undefined;
   readonly render?: ((onClick: () => Promise<any>) => ReactNode) | undefined | null;
 };
