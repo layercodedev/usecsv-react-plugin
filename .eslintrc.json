@@ -39,6 +39,8 @@
   "rules": {
     "prettier/prettier": "error",
     "quotes": "off",
+    "functional/no-mixed-type":"off",
+    "functional/no-return-void":"off",
     "@typescript-eslint/naming-convention": [
       "error",
       {

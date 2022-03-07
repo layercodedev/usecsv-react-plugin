@@ -1,21 +1,16 @@
 import useCsvPlugin from "@usecsv/js";
 import React, { FC, ReactNode } from "react";
 
-type UserObject = {
-  readonly userId: string;
-};
-type UseCsvButtonTypes = {
-  readonly importerKey: string;
-  readonly user?: UserObject;
-  readonly metadata: Record<string, string | number> | undefined;
+type pluginParamas = Parameters<typeof useCsvPlugin>[0];
+type UseCsvButtonTypes = pluginParamas & {
   readonly render?: ((onClick: () => Promise<any>) => ReactNode) | undefined | null;
 };
 
-const UseCsvButton: FC<UseCsvButtonTypes> = ({ children, importerKey, user, metadata, render }) => {
+const UseCsvButton: FC<UseCsvButtonTypes> = ({ children, render, ...parmas }) => {
   return (
     <>
       {render ? (
-        <>{render(() => useCsvPlugin({ importerKey, user, metadata }))}</>
+        <>{render(() => useCsvPlugin(parmas))}</>
       ) : (
         <button
           type="button"
@@ -30,7 +25,7 @@ const UseCsvButton: FC<UseCsvButtonTypes> = ({ children, importerKey, user, meta
             fontSize: "16px",
             cursor: "pointer",
           }}
-          onClick={() => useCsvPlugin({ importerKey, user, metadata })}
+          onClick={() => useCsvPlugin(parmas)}
         >
           {children}
         </button>

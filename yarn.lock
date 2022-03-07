@@ -2593,10 +2593,10 @@
     "@typescript-eslint/types" "4.28.4"
     eslint-visitor-keys "^2.0.0"
 
-"@usecsv/js@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.1.0.tgz#977fa6244b009ce058572b766ef9b4ffb0b85186"
-  integrity sha512-FU8Ci3rpcAheTbFP9lj/jYefZ1/EGw89oIPLNj41e/6cMvM2SIkzXtCVw/JivyQuTS+c17DCd22FN2588RGIDg==
+"@usecsv/js@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.2.0.tgz#5a9d46bb5c4579aea72263751c38488fd9822244"
+  integrity sha512-xWSfkv9RTXiBKmVsrWQPBNCUlFZudgJ3OtEAyC59tZV3mzSWyDYaS4fC3WuY1+QSu3ovRfeFXVHELCaYb9AXEw==
   dependencies:
     "@semantic-release/github" "^8.0.2"
     insert-css "^2.0.0"
