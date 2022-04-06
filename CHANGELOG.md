@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/layercodedev/usecsv-react-plugin/compare/v0.2.2...v0.2.3) (2022-04-06)
+
+
+### Bug Fixes
+
+* allow usecsv core patch updates ([9ae4566](https://github.com/layercodedev/usecsv-react-plugin/commit/9ae4566437df825a0c86196cd0827ef73de272ac))
+
 ## [0.2.2](https://github.com/layercodedev/usecsv-react-plugin/compare/v0.2.1...v0.2.2) (2022-03-09)
 
 
