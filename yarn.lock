@@ -2628,10 +2628,10 @@
     "@typescript-eslint/types" "4.28.4"
     eslint-visitor-keys "^2.0.0"
 
-"@usecsv/js@0.2.x":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.2.3.tgz#fbe6a78154b4816b32beb34348dc989d6e8979e3"
-  integrity sha512-dV6ftB9bjdoLGXkGVjaJXI8574JCGWJRq5leSDM9USK1DfbMxumYQo3BAXbP9PstfAZpssTrZuP67F53q+xTOw==
+"@usecsv/js@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.2.4.tgz#b5dac15e5c92659f4514803cc3a01bb01c172681"
+  integrity sha512-6CKRHCxiTLXLlmD6IkJKCEj+oT7wDjdgPRP6RsO3/Q3WlSGMIZYcb3n0qvi/vUKQG65PHB0Jl+vSosv+OiD/zw==
   dependencies:
     insert-css "^2.0.0"
     penpal "^6.0.1"
