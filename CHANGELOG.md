@@ -1,3 +1,10 @@
+## [0.2.5](https://github.com/layercodedev/usecsv-react-plugin/compare/v0.2.4...v0.2.5) (2022-04-25)
+
+
+### Bug Fixes
+
+* update "@usecsv/js" , to use close function param ([928b88d](https://github.com/layercodedev/usecsv-react-plugin/commit/928b88dfcd716888f432f4ca2ebc7dec0e3975b1))
+
 ## [0.2.4](https://github.com/layercodedev/usecsv-react-plugin/compare/v0.2.3...v0.2.4) (2022-04-24)
 
 
